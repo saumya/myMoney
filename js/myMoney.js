@@ -8,7 +8,7 @@ $(document).ready(function(){
 	screen = new joScreen(
 	    stack = new joStack().push(
 	        card = new joCard([
-	            new joTitle("Hello"),
+	            new joTitle("My Money"),
 	            new joCaption("Hello World!"),
 	            new joDivider(),
 	            new joButton("OK").selectEvent.subscribe(function() {
