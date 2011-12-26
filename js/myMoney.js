@@ -53,7 +53,14 @@ joCache.set("menu", function() {
 
 //LoginView
 joCache.set("about", function() {
-	var card = new joCard([]).setTitle("About My Money");
+	var card = new joCard([
+		new joTitle("What is it ?"),
+		new joCaption("A simple application for keeping track of your money."),
+		new joTitle("How ?"),
+		new joCaption("Fill in the regular expense when you are doing it."),
+		new joTitle("What i need to know ?"),
+		new joCaption("Just fill the expense when you are doing it. That should be it. It works on offline too. In case it does not, please inform us. ")
+	]).setTitle("About My Money");
 	return card;
 });
 
