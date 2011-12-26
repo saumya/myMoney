@@ -53,19 +53,19 @@ joCache.set("menu", function() {
 
 //LoginView
 joCache.set("about", function() {
-	var card = new joCard([]);
+	var card = new joCard([]).setTitle("About My Money");
 	return card;
 });
 
 //LoginView
 joCache.set("loginView", function() {
-	var card = new joCard([]);
+	var card = new joCard([]).setTitle("Login");
 	return card;
 });
 
 //register view
 joCache.set("registrationView", function() {
-	var card = new joCard([]);
+	var card = new joCard([]).setTitle("Registration");
 	return card;
 });
 
