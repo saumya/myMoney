@@ -66,7 +66,20 @@ joCache.set("about", function() {
 
 //LoginView
 joCache.set("loginView", function() {
-	var card = new joCard([]).setTitle("Login");
+	var card = new joCard([
+		new joTitle("Login information"),
+		new joFlexrow([
+				new joLabel("User Id").setStyle({className:"left", marginTop:"2px", width:"0px"}),
+				new joInput("saumya").setStyle({width: "150px", marginBottom: "0px"})
+			]),
+		new joFlexrow([
+				new joLabel("Password").setStyle({className:"left", marginTop:"2px", width:"0px"}),
+				new joPasswordInput("saumya").setStyle({width: "150px", marginBottom: "0px"})
+			]),
+		new joButton("Login").selectEvent.subscribe(function() {
+			App.mainScreen.alert("You pressed a button!");
+		})
+	]).setTitle("Login");
 	return card;
 });
 
