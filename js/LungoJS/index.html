@@ -24,28 +24,31 @@
 </head>
 
 <body class="app">
-    <section id="intro">
-        <header data-back="home blue" data-title="Welcome"></header>
-        <aside>Thsi is an aside.</aside>
-        <article id="intro_welcome">
-        	Welcome to the money manager. Your personal space for all your money.
-    		<a href="#intro_welcome_message" data-target="article" data-icon="home">Next</a>
-        </article>
-        <article id="intro_welcome_message">
-        	In case you like it or not, we love to listen back from you. Send us a tweet @saumya.
-        	<a href="#userHome" data-target="section" data-icon="home">Get on to the action.</a>
-        </article>
-        <footer class="toolbar" data-back="home green" data-title="@saumya : 2012"></footer>
-    </section>
-    <section id="userHome">
-        <header data-back="home blue" data-title="Welcome"></header>
-        <aside>Thsi is an aside.</aside>
-        <article id="intro_welcome">
-        	Welcome to the money manager. Your personal space for all your money.
-    		<a href="#intro_welcome_message" data-target="article" data-icon="home">Next</a>
-        </article>
-        <footer class="toolbar" data-back="home green" data-title="@saumya : 2012"></footer>
-    </section>
+    <section id="main">
+    <footer class="toolbar">
+        <nav>
+            <a href="#first_article" data-title="First Article" data-target="article" data-icon="home">
+            	<abbr>first article</abbr>
+            </a>
+            <a href="#second_article" data-title="Second Article" data-target="article" data-icon="user">
+            	<abbr>second article</abbr>
+            </a>
+
+             <!-- This link is to view a different section -->
+            <a href="#second" data-title="second section" data-target="section" data-icon="right">
+            	<abbr>second section</abbr>
+            </a>
+        </nav>
+    </footer>
+
+    <article id="first_article">first </article>
+    <article id="second_article">second</article>
+</section>
+
+<section id="second">
+    <header data-back="home blue"></header>
+    <!-- content -->section
+</section>
 
     <!-- LungoJS (Production mode) -->
     <script src="lungo.js/lungo-1.0.4.packed.js"></script>
