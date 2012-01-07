@@ -2,7 +2,7 @@
 <html manifest="index.appcache">
 <head>
     <meta charset="utf-8">
-    <title>LungoJS</title>
+    <title>LungoJS : Money</title>
     <meta name="description" content="">
     <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
     <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
@@ -24,18 +24,27 @@
 </head>
 
 <body class="app">
-    <!--
-        First, you have to do is create a LungoJS Application instance in the file app.js.
-        ...and use a Webkit browser as Chrome or Safari.
-    -->
-    <section id="hello_world">
-        <header data-title="Hello world!"></header>
-
-        <aside></aside>
-
-        <article></article>
-
-        <footer></footer>
+    <section id="intro">
+        <header data-back="home blue" data-title="Welcome"></header>
+        <aside>Thsi is an aside.</aside>
+        <article id="intro_welcome">
+        	Welcome to the money manager. Your personal space for all your money.
+    		<a href="#intro_welcome_message" data-target="article" data-icon="home">Next</a>
+        </article>
+        <article id="intro_welcome_message">
+        	In case you like it or not, we love to listen back from you. Send us a tweet @saumya.
+        	<a href="#userHome" data-target="section" data-icon="home">Get on to the action.</a>
+        </article>
+        <footer class="toolbar" data-back="home green" data-title="@saumya : 2012"></footer>
+    </section>
+    <section id="userHome">
+        <header data-back="home blue" data-title="Welcome"></header>
+        <aside>Thsi is an aside.</aside>
+        <article id="intro_welcome">
+        	Welcome to the money manager. Your personal space for all your money.
+    		<a href="#intro_welcome_message" data-target="article" data-icon="home">Next</a>
+        </article>
+        <footer class="toolbar" data-back="home green" data-title="@saumya : 2012"></footer>
     </section>
 
     <!-- LungoJS (Production mode) -->
