@@ -25,10 +25,11 @@
 
 <body class="app">
 	<section id="app_Home">
+		<header data-title="Welcome to mR."></header>
 	    <footer class="toolbar">
 	        <nav>
-	            <a href="#mR_intro" data-title="First Article" data-target="article" data-icon="home"></a>
-	            <a href="#mR_registration" data-title="Second Article" data-target="article" data-icon="user"></a>
+	            <a href="#mR_intro" data-title="Introduction" data-target="article" data-icon="home"></a>
+	            <a href="#mR_registration" data-title="User Registration" data-target="article" data-icon="user"></a>
 	                         <!-- for different section -->
 	            <a href="#mR_Home" data-title="second section" data-target="section" data-icon="right">
 	            	<abbr>second section</abbr>
@@ -46,13 +47,20 @@
 	    </article>
 	</section>
 	
-	<section id="user_registration">
-	    <header data-back="home blue"></header>
-	    <!-- content -->
-	</section>
 	<section id="mR_Home">
-	    <header data-back="home blue"></header>
-	    <!-- content -->
+	    <header data-back="home black" data-title='My mR.'></header>
+	    <footer class="toolbar">
+	        <nav>
+	            <a href="#mR_add" data-title="Add" data-target="article" data-icon="add"></a>
+	            <a href="#mR_listView" data-title="View" data-target="article" data-icon="note"></a>
+	        </nav>
+	    </footer>
+	    <article id="mR_add">
+	    	TODO: add
+	    </article>
+	    <article id="mR_listView">
+	    	TODO: view the expenditure
+	    </article>
 	</section>
 
     <!-- LungoJS (Production mode) -->
