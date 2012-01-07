@@ -9,10 +9,9 @@ var App = (function(lng, undefined) {
         platform: 'iOS'
     });
     
-    //lng.app.get('name');
+    lng.Core.log(1,'testing');
+    lng.Core.log(1,lng.App.get('name'));
     
-    return {
-
-    };
+    return {};
 
 })(LUNGO);
