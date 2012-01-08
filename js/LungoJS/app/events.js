@@ -19,6 +19,7 @@ App.Events = (function(lng, app, undefined) {
         App.Data.insertTodo({
             name: name.val(),
             description: description.val(),
+            type: type.val(),
             done: 0,
             created_at: Date('now')
         });
@@ -48,7 +49,7 @@ App.Events = (function(lng, app, undefined) {
         var current_todo = lng.Data.Cache.get('current_todo');
         var name = lng.Dom.query('#txtEditName');
         var description = lng.Dom.query('#txtEditDescription');
-        var type = lng.Dom.query('#txtNewType');
+        var type = lng.Dom.query('#txtEditType');
 
         App.Data.updateTodo(current_todo.id, {
             name: name.val(),
