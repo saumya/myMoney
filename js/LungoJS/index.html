@@ -51,34 +51,36 @@
 
         <footer class="toolbar">
             <nav>
-                <a href="#pending" data-target="article" class="current" data-title="Pending ToDo's" data-icon="inbox"></a>
-                <a href="#done" data-target="article" data-title="Done ToDo's" data-icon="folder"></a>
+                <a href="#pending" data-target="article" class="current" data-title="All Expenses" data-icon="inbox"></a>
+                <a href="#done" data-target="article" data-title="Done Expenses" data-icon="folder"></a>
             </nav>
         </footer>
     </section>
 
     <section id="view">
-        <header data-back="home articblue" data-title="View ToDo's" >
+        <header data-back="home articblue" data-title="View Expenses" >
             <a href="#" id="btnDoneTodo" class="button onright blue" data-icon="check">&nbsp;Done</a>
         </header>
         <article class="list">
             <div class="indented">
                 <ul class="form">
                     <li class="dark">
-                        <label>Name</label>
-                        <input type="text" id="txtEditName" placeholder="Input text"/>
+                        <label>Money</label>
+                        <input type="text" id="txtEditName" placeholder="95.50"/>
                     </li>
                     <li>
-                        <label>Description</label>
-                        <textarea id="txtEditDescription" placeholder="Textarea sample"></textarea>
+                        <label>Spent on</label>
+                        <textarea id="txtEditDescription" placeholder="Beer for my girlfriend on demand."></textarea>
                     </li>
                     <li>
                         <label>Type</label>
                         <label class="select">
                             <select id="txtEditType">
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1">Necessity</option>
+                                <option value="2">Regular</option>
+                                <option value="3">Comfort</option>
+                                <option value="4">Luxury</option>
+                                <option value="4">Waste</option>
                             </select>
                         </label>
                     </li>
@@ -90,30 +92,32 @@
     </section>
 
     <section id="new">
-		<header data-back="home articblue" data-title="New ToDo"></header>
+		<header data-back="home articblue" data-title="New Expense"></header>
 		<article class="list">
             <div class="indented">
                 <ul class="form">
                     <li>
-                        <label>Name</label>
-                        <input type="text" id="txtNewName" placeholder="Input text"/>
+                        <label>Money</label>
+                        <input type="text" id="txtNewName" placeholder="95.50"/>
                     </li>
                     <li>
-                        <label>Description</label>
-                        <textarea id="txtNewDescription" placeholder="Textarea sample"></textarea>
+                        <label>Spent on</label>
+                        <textarea id="txtNewDescription" placeholder="Beer for my girlfriend on demand."></textarea>
                     </li>
                     <li>
                         <label>Type</label>
                         <label class="select">
                             <select id="txtNewType">
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1">Necessity</option>
+                                <option value="2">Regular</option>
+                                <option value="3">Comfort</option>
+                                <option value="4">Luxury</option>
+                                <option value="4">Waste</option>
                             </select>
                         </label>
                     </li>
                 </ul>
-                <a href="#" id="btnNewTodo" class="button big blue" data-icon="check">Add ToDo</a>
+                <a href="#" id="btnNewTodo" class="button big blue" data-icon="check">Add Expense</a>
                 <a href="#back" data-target="section" class="button big red" data-icon="cancel">Cancel</a>
             </div>
 		</article>

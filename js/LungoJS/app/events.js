@@ -2,6 +2,9 @@ App.Events = (function(lng, app, undefined) {
 
 //Login
     lng.Dom.Event.live('#btnLogin', 'TAP', function(evet) {
+    	lng.Core.log(1,lng.App.get('name'));
+    	lng.Core.log(1,'events.js : loginButton : ');
+    	
         lng.Router.section('main');
         App.Data.refresh();
     });
