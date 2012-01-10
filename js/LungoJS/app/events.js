@@ -62,7 +62,7 @@ App.Events = (function(lng, app, undefined) {
     //Delete ToDo
     lng.Dom.Event.live('#btnDeleteTodo', 'TAP', function(event) {
         var current_todo = lng.Data.Cache.get('current_todo');
-
+        lng.Core.log(1,'events.js : btnDeleteTodo : ');
         var options = [
             {
                 name: '...Yes, delete it!',

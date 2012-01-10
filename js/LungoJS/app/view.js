@@ -29,7 +29,7 @@ App.View = (function(lng, app, undefined) {
 
                 $('#txtEditName').val(data.name);
                 $('#txtEditDescription').val(data.description);
-                $('#txtEditName').val(data.name);
+                $('#txtEditType').val(data.type);
 
                 lng.Router.section('view');
             }
