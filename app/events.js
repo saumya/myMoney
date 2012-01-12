@@ -27,7 +27,7 @@ App.Events = (function(lng, app, undefined) {
         name.val('');
         description.val('');
 
-        App.View.returnToMain('ToDo created', 'check');
+        App.View.returnToMain('Expense Scheduled', 'check');
     });
 
     //View ToDo
@@ -41,7 +41,7 @@ App.Events = (function(lng, app, undefined) {
         var current_todo = lng.Data.Cache.get('current_todo');
 
         App.Data.doneTodo(current_todo.id);
-        App.View.returnToMain('ToDo done', 'check');
+        App.View.returnToMain('Spent', 'check');
     });
 
     //Update ToDo
@@ -56,16 +56,12 @@ App.Events = (function(lng, app, undefined) {
             description: description.val()
         });
 
-        App.View.returnToMain('ToDo updated', 'write');
+        App.View.returnToMain('Expense updated', 'write');
     });
 
     //Delete ToDo
     lng.Dom.Event.live('#btnDeleteTodo', 'TAP', function(event) {
         var current_todo = lng.Data.Cache.get('current_todo');
-        lng.Core.log(1,'events.js : btnDeleteTodo : ');
-        App.Data.removeTodo(current_todo.id);
-        App.View.returnToMain('ToDo deleted', 'trash');
-        /*
         var options = [
             {
                 name: '...Yes, delete it!',
@@ -73,12 +69,11 @@ App.Events = (function(lng, app, undefined) {
                 color: 'green',
                 callback: function(){
                     App.Data.removeTodo(current_todo.id);
-                    App.View.returnToMain('ToDo deleted', 'trash');
+                    App.View.returnToMain('Expense deleted', 'trash');
                 }
             }
         ];
         lng.Sugar.Growl.option('Are you sure?', options);
-        */
     });
 
 

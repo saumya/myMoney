@@ -40,7 +40,7 @@ App.View = (function(lng, app, undefined) {
     var returnToMain = function(message, icon) {
         lng.Sugar.Growl.notify(message, 'Tap to close', icon, 'error', 5);
 
-        //lng.Sugar.Growl.show(message, icon, true);
+        lng.Sugar.Growl.show(message, icon, true);
         App.Data.refresh();
 
         setTimeout(function() {
