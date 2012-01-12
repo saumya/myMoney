@@ -63,6 +63,9 @@ App.Events = (function(lng, app, undefined) {
     lng.Dom.Event.live('#btnDeleteTodo', 'TAP', function(event) {
         var current_todo = lng.Data.Cache.get('current_todo');
         lng.Core.log(1,'events.js : btnDeleteTodo : ');
+        App.Data.removeTodo(current_todo.id);
+        App.View.returnToMain('ToDo deleted', 'trash');
+        /*
         var options = [
             {
                 name: '...Yes, delete it!',
@@ -75,6 +78,7 @@ App.Events = (function(lng, app, undefined) {
             }
         ];
         lng.Sugar.Growl.option('Are you sure?', options);
+        */
     });
 
 

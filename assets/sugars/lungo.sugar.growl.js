@@ -67,6 +67,7 @@ LUNGO.Sugar.Growl = (function(lng, undefined) {
     };
 
     var option = function(title, options) {
+    	lng.Core.log(1, 'lungo.sugar.growl : option');
         _showGrowlModal(true);
 
         _options = options;

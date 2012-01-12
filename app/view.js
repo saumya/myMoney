@@ -15,6 +15,7 @@ App.View = (function(lng, app, undefined) {
         '<li id="{{id}}">\
             <a href="#">\
                 <span class="icon folder"></span>\
+                <div class="onright">{{type}}</div>\
                 {{name}}\
                 <small>{{description}}</small>\
             </a>\
